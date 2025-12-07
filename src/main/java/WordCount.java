@@ -78,7 +78,9 @@ public class WordCount {
 			for (IntWritable val : values)
 				sum += val.get();
 
-			context.write(key, new IntWritable(sum));
+			if(sum>=10) {
+				context.write(key, new IntWritable(sum));
+			}
 		}
 	}
 
