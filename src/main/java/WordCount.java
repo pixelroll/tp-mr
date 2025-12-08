@@ -54,18 +54,23 @@ public class WordCount {
 
 		public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 			String line = value.toString();
-
+            // 1. mettre en minuscule
+            line = line.toLowerCase();
 			// Une méthode pour créer des messages de log
 			//LOG.info("MESSAGE INFO");
-
+            // 2. enlever les ponctuations
+            line=line.replaceAll("\\p{Punct}", " ");
 			String[] words = line.split("\\s+");
 
 			// La ligne est vide : on s'arrête
 			if (Arrays.equals(words, emptyWords))
 				return;
 
-			for (String word : words)
-				context.write(new Text(word), one);
+			for (String word : words){
+                if(word.length()>4){
+                    context.write(new Text(word), one);
+                }
+            }
 		}
 	}
 
@@ -77,8 +82,9 @@ public class WordCount {
 
 			for (IntWritable val : values)
 				sum += val.get();
-
-			context.write(key, new IntWritable(sum));
+            if(sum>=10){
+                context.write(key, new IntWritable(sum));
+            }
 		}
 	}
 
