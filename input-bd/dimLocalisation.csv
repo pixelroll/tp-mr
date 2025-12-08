@@ -1,0 +1,5 @@
+"LOCALISATIONKEY","PAYS","REGION","VILLE","ZONEGEO","ZONETRANSFRONTALIERE","NIVEAURISQUEPAYS","ESTSANCTIONNE","FUSEAUHORAIRE","DEVISE","LONGITUDE","LATITUDE"
+3,"Belgique","Bruxelles-Capitale","Bruxelles","EU",1,"Faible",0,"Europe/Brussels","EUR",4.3517,50.8503
+4,"Allemagne","Bavière","Munich","EU",0,"Faible",0,"Europe/Berlin","EUR",11.582,48.1351
+1,"France","Occitanie","Montpellier","EU",0,"Faible",0,"Europe/Paris","EUR",3.8767,43.6108
+2,"France","Île-de-France","Paris","EU",0,"Moyen",0,"Europe/Paris","EUR",2.3522,48.8566
