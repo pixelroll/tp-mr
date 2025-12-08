@@ -1,0 +1,5 @@
+"CANALKEY","CANAL","MODE_CANAL","TYPERESEAU","TYPEAPPAREIL","POINTENTREE","CARTEPRESENTE","CARTETOKENISEE","SANSCONTACT","SYSTEMEEXPLOITATION","METHODEAUTHENTIFICATION"
+3,"ATM","Retrait","Interbancaire","Distributeur","Guichet automatique",1,0,0,"Embedded","PIN"
+4,"Web","Back-office","LAN","Poste agence","Agence",0,0,0,"Windows","Smartcard"
+1,"Web","E-commerce","WiFi","Desktop","Site Web",0,1,0,"Windows","Mot de passe"
+2,"Mobile","App","4G","Smartphone","App mobile",0,1,1,"Android","Biométrie"

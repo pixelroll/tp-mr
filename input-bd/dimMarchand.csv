@@ -1,0 +1,5 @@
+"MARCHANDKEY","CODEMARCHAND","NOMMARCHAND","CATEGORIEMARCHAND","SOUSCATEGORIEMARCHAND","PAYSMARCHAND","REGIONMARCHAND","VILLEMARCHAND","CANALPRINCIPAL","TAILLEMARCHAND","ESTPARTENAIRE","NIVEAURISQUEMARCHAND"
+3,"CLTH75","Boutique Mode Paris","Retail","Vêtements","France","Île-de-France","Paris","Présentiel","Moyen",0,"Moyen"
+4,"SAAS01","Abonnement Logiciel","Services","SaaS","France","Occitanie","Montpellier","En ligne","Moyen",1,"Faible"
+1,"AMZFR","Amazon France","E-commerce","Généraliste","France","Île-de-France","Paris","En ligne","Grand",1,"Faible"
+2,"FOOD34","Snack Montpellier","Restauration","Restauration rapide","France","Occitanie","Montpellier","Présentiel","Petit",0,"Moyen"

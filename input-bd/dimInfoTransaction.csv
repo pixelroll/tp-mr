@@ -1,0 +1,5 @@
+"INFOTRANSACTIONKEY","TYPETRANSACTION","TYPEBENEFICIAIRE","ETAT","ESTFRAUDE","ESTRECURRENT","SCHEMAPAIEMENT","SOURCEFINANCEMENT","MODELEFRAIS","MODECAPTURE","CODEDEVISE"
+3,"Retrait DAB","Client","Autorisé",0,0,"Visa","Compte courant","Frais fixes","Présentiel","EUR"
+4,"Virement","Particulier","En cours",0,0,"SEPA","Compte épargne","Gratuit","En ligne","EUR"
+1,"Paiement carte","Commerçant","Autorisé",0,0,"Visa","Compte courant","Frais fixes","En ligne","EUR"
+2,"Abonnement","Service en ligne","Autorisé",0,1,"Mastercard","Compte courant","Pourcentage","En ligne","EUR"
