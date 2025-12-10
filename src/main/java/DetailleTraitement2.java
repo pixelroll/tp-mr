@@ -1,3 +1,10 @@
+import java.io.IOException;
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.LongWritable;
@@ -11,14 +18,7 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
-import java.io.IOException;
-import java.time.Instant;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-public class CrossBorderPipeline {
+public class DetailleTraitement2 {
 
     private static final String INPUT_BD          = "input-bd/";
     private static final String STEP1_OUTPUT = "output/Step1ClientEnrich-";
@@ -239,7 +239,7 @@ public class CrossBorderPipeline {
         String step1OutDir = STEP1_OUTPUT + Instant.now().getEpochSecond();
 
         Job job1 = new Job(conf, "Step1ClientEnrich");
-        job1.setJarByClass(CrossBorderPipeline.class);
+        job1.setJarByClass(DetailleTraitement2.class);
 
         job1.setMapperClass(Step1Map.class);
         job1.setReducerClass(Step1Reduce.class);
@@ -259,7 +259,7 @@ public class CrossBorderPipeline {
 
         // ---- Job 2: jointure avec marchands et aggregation par (paysClient, paysMarchand) ----
         Job job2 = new Job(conf, "CrossBorderStats");
-        job2.setJarByClass(CrossBorderPipeline.class);
+        job2.setJarByClass(DetailleTraitement2.class);
 
         job2.setMapperClass(Step2Map.class);
         job2.setReducerClass(Step2Reduce.class);
