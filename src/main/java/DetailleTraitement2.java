@@ -16,10 +16,10 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MarchandVolume {
+public class DetailleTraitement2 {
 
     private static final String INPUT_PATH  = "input-detaille/";
-    private static final String OUTPUT_PATH = "output/MarchandVolume-";
+    private static final String OUTPUT_PATH = "output/DetailleTraitement2-";
 
     public static class Map extends Mapper<LongWritable, Text, Text, Text> {
         private String fichierActuel;
@@ -124,8 +124,8 @@ public class MarchandVolume {
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
 
-        Job job = new Job(conf, "MarchandVolume");
-        job.setJarByClass(MarchandVolume.class);
+        Job job = new Job(conf, "DetailleTraitement2");
+        job.setJarByClass(DetailleTraitement2.class);
 
         job.setMapperClass(Map.class);
         job.setReducerClass(Reduce.class);
